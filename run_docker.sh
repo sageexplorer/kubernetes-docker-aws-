@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-sudo docker build --tag=simple-ngnix .
+docker build --tag=simple-ngnix .
 
-sudo docker image ls
+docker image ls
 
-sudo docker run -p 80:80 simple-ngnix
+docker run -p 80:80 simple-ngnix
