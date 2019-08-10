@@ -6,10 +6,9 @@ pipeline {
          sh 'tidy -q -e index.html'
         }
       }
-      stage('Upload to AWS.') {
+      stage('Build Docker Image') {
         steps {
-          withAWS(credentials:'aws-static') {
-           s3Upload(file:'index.html', bucket:'jenkinsudacityproject', path: 'index.html')
+          sh './run_docker.sh'
             }
         }
       }
