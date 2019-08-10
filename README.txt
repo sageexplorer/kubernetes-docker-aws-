@@ -1,5 +1,7 @@
 # kubernetes-docker-aws-
 
+6-226.us-east-2.compute.amazonaws.com:8080/buildStatus/icon?job=static%2Fmaster
+
 Simple ngnix running kubernetes pods in aws. The app shows a simple page, with a youtube video imbedded in it. 
 
  * To build docker image, run ./run_docker.sh
