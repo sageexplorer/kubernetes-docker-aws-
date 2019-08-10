@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+data:
+  AWS_BUCKET:
+  AWS_PROFILE: 
+  AWS_SECRET:
+medatdata: env-config 
+
+
