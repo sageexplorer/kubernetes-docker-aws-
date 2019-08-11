@@ -11,6 +11,11 @@ pipeline {
           sh './run_docker.sh'
             }
         }
+      stage('Upload Docker Image') {
+          steps {
+            sh './upload_docker.sh'
+              }
+        }
       }
     }
   
