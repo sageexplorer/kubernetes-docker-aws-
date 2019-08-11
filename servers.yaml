@@ -1,0 +1,20 @@
+Parameters:
+
+  EnvironmentName:
+    Description: An environment name that will be prefixed
+    Type: String 
+
+Resources:
+  KubernetesBucket:
+    Type: AWS::S3::Bucket
+
+Outputs:
+  VPC:
+    Description: A reference to the created Load Balancer/ ELB URL 
+    Value: !Join 
+      - ''
+      -
+        - 'http://'
+        -  !GetAtt kubernetesBucket
+    Export:
+      Name: S3url    
