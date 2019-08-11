@@ -11,3 +11,10 @@ Simple ngnix running kubernetes pods in aws. The app shows a simple page, with a
  * To run app using kubernetes, run ./run_kubernetes.sh
 
  * Any changes to the repo will trigger jenkins build, which runs a linter for html, and runs unit test.
+
+Artifacts:
+ * Jenkinsfile contains build steps
+ 
+ * servers.yaml is a cloudformation template to start AWS services, which is run using ./create.sh
+ 
+ 
