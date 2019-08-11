@@ -7,7 +7,8 @@
 # Set the base image to Ubuntu
 FROM ubuntu
 
-
+# Install kubectl from Docker Hub.
+COPY --from=lachlanevenson/k8s-kubectl:v1.10.3 /usr/local/bin/kubectl /usr/local/bin/kubectl
 # Install Nginx
 
 # Add application repository URL to the default sources
