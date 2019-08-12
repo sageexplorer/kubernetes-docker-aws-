@@ -7,6 +7,8 @@ Simple ngnix running kubernetes pods in aws. The app shows a simple page, with a
  * To build docker image, run ./run_docker.sh
 
  * Docker Image is hosted in Dockerhub. The image is sage007/simple-ngnix 
+ 
+ * create.sh is a cloudformation script to create AWS resources. 
 
  * To run app using kubernetes, run ./run_kubernetes.sh
 
