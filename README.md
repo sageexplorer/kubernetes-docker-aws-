@@ -22,3 +22,7 @@ Artifacts:
 Rolling Updates:
  
  * Rolling updates are managed by running ./rolling_updates.sh with the new image version in the parameter
+
+kubernetes Cluster
+
+ * Kubernetes cluster is created by cloudformation template on Amazon. The files needed for cluster creation is in cloudformation folder. 
