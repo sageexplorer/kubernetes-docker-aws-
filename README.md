@@ -19,4 +19,6 @@ Artifacts:
  
  * servers.yaml is a cloudformation template to start AWS services, which is run using ./create.sh
  
+Rolling Updates:
  
+ * Rolling updates are managed by running ./rolling_updates.sh with the new image version in the parameter
