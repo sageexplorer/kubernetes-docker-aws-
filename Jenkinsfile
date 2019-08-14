@@ -8,7 +8,7 @@ pipeline {
       }
       stage('Build Docker Image') {
         steps {
-          sh './run_kubernetes.sh'
+          sh './run_docker.sh'
             }
         }
       stage('Upload Docker Image') {
