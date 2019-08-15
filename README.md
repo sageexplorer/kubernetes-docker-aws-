@@ -31,6 +31,9 @@ Rolling Updates:
 kubernetes Cluster
 
  * Kubernetes cluster is created by cloudformation template on Amazon. The files needed for cluster creation is in cloudformation folder. 
+ 
+ * To build kubernetes deployment, and service in AWS, run `kubectl create -f deployment.yaml && 
+kubectl create -f service.yml` commands from the kubernetes directory. 
 
  How to update the site?
  
