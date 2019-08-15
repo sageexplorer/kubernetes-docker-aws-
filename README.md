@@ -31,3 +31,7 @@ Rolling Updates:
 kubernetes Cluster
 
  * Kubernetes cluster is created by cloudformation template on Amazon. The files needed for cluster creation is in cloudformation folder. 
+
+ How to update the site?
+ 
+ * Push changes to git, it will trigger a  build pipeline that runs tests, and lints the source codes. If build passes, docker image is uploaded, and a ngnix site is build. When the build step passes, kubernetes can be run on the clusters created by cloudformation command. Note: at this point, kubectl is run locally, but this could also be part of the build pipeline.  
