@@ -18,7 +18,7 @@ pipeline {
         }
       stage('Run Integration Test to check the site') {
           steps {
-            sh 'tests/test.sh'
+            sh './tests/test.sh'
              }
         }
       }
