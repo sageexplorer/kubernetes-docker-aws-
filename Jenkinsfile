@@ -16,6 +16,11 @@ pipeline {
             sh './upload_docker.sh'
               }
         }
+      stage('Run Integration Test to check the site') {
+          steps {
+            sh './tests/test.sh'
+              }
+        }
       }
     }
   
