@@ -21,7 +21,7 @@ Artifacts:
  
 Rolling Updates:
  
- * Rolling updates are managed by running ./rolling_updates.sh with the new image version in the parameter
+ * Rolling updates can be made by running  `kubectl apply -f kubernetes/deployment.yml`
  
  * Rolling update is defined in kubernetes/deployment.yml
  
