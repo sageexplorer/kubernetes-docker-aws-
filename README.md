@@ -26,6 +26,9 @@ Rolling Updates:
  * Rolling update is defined in kubernetes/deployment.yml
  
  * To perform rolling update, change the version in deployment to a newer version, like v3m or change the container image.
+ 
+ * To perfrom a rollout, following command was issued, and the site got restored to the previous version. `kubectl rollout undo deployment/ngnix`
+ 
 
 
 kubernetes Cluster
